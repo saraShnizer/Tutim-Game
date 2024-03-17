@@ -1,0 +1,382 @@
+/* הרקע של עמוד הבית */
+#homePageBody {
+    background-color: rgb(102 204 255);
+}
+/* עיצוב לגיפ */
+#backGroundGif {
+    height: 50vw;
+    width: 42vw;
+    left: 30vw;
+    z-index: -100;
+    position: fixed; 
+}
+
+#gameName {
+    font-size: 10vw;
+    font-family: cursive;
+    position: fixed;
+    top: 23vw;
+    left: 2vw;
+    color: #672100;
+    animation-name: grow, color;
+    animation-duration: 5s;
+    display: none;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+
+@keyframes grow {
+
+    0% {
+        font-size: 0vw;left: 52vw;
+
+    }
+
+    100% {
+        font-size: 10vw;left: 2vw;
+    }
+}
+
+@keyframes color {
+
+    0% {
+        color: #00670f;
+
+    }
+
+    100% {
+        color: #672100;
+    }
+}
+/* טופס של הנתונים */
+.details {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1vw;
+    font-family: cursive;
+}
+
+input[type=submit]:hover {
+    background-color: #d6070b;
+   
+}
+
+#boxDetalis {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 90%;
+    width: 25vw;
+    margin-left: 36vw;
+    display: none;
+    animation-name: come;
+    animation-duration: 5s;
+    font-size: 1vw;
+    font-family: cursive;
+
+}
+
+@keyframes come {
+
+    0% {
+        opacity: 0%;
+        ;
+
+    }
+
+    100% {
+        opacity: 90%;
+    }
+}
+
+#bodyGame {
+    background-color: #e14e6a;
+}
+
+#background {
+    height: 58vw;
+    width: 105vw;
+    left: 0px;
+    position: fixed;
+    z-index: -10000;
+    top: 0px;
+    display: none;
+
+}
+
+#oraot {
+    color: #ffffff;
+    /* תלת מימד */
+    text-shadow: 10px 5px 20px rgb(0, 0, 0);
+    position: fixed;
+    left: 13vw;
+    right: 13vw;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: come2;
+    animation-duration: 5s;
+    
+}
+@keyframes come2 {
+
+    0% {
+        opacity: 0%;
+        
+
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+#levels{
+    display: flex;
+    position: fixed;
+    opacity: 100%;
+   flex-direction: column;
+top: 27vw;
+left: 7vw;
+    
+}
+.level {
+   
+    width: 23vw;
+    height: 6vw;
+    font-size: 3vw;
+    border: solid 1vw #4CAF50;
+    background-color: rgb(102 204 255);
+    border-radius: 2vw;
+    font-family: cursive;
+   margin-top: 1vw;
+    
+}
+
+.level:hover {
+    
+    background-color: #4CAF50;
+    border: solid 1vw rgb(102 204 255);
+    color: #000000;
+    animation-name: grow1;
+    animation-duration: 0.5s;
+    width: 23.5vw; 
+    height: 6.5vw;
+}
+
+@keyframes grow1 {
+
+    0% {
+        width: 23vw; height: 6vw;
+
+    }
+
+    100% {
+        width: 23.5vw; height: 6.5vw;
+    }
+   
+}
+
+.tutImg {
+    height: 3vw;
+    width: 3vw;
+    position: fixed;
+    animation-name: move;
+    animation-duration: 5s;
+    bottom: -20vw;
+
+
+}
+
+.dangerImg {
+    height: 3vw;
+    width: 3vw;
+    position: fixed;
+    animation-name: move;
+    animation-duration: 5s;
+    bottom: -20vw;
+}
+
+@keyframes move {
+
+    0% {
+        bottom: 80vw;
+
+    }
+
+    100% {
+        bottom: -20vw;
+    }
+}
+
+#mouseImg {
+    height: 6vw;
+    width: 12vw;
+    bottom: 0px;
+    position: fixed;
+    left: 200px
+}
+
+
+
+#timer {
+
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 5vw;
+    position: fixed;
+    top: 2vw;
+    left: 2vw;
+
+
+}
+
+#sumPoint {
+    position: fixed;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    border: solid 1vw #d6070b;
+    top: 10vw;
+    left: 5vw;
+}
+#endOfGame{
+    display: none;
+    position: absolute;
+
+    left: 32vw;
+    top: 10vw;
+    width: 36vw;
+    height: 25vw;
+    /* animation-name: end;
+    animation-duration: 15s; */
+    z-index: 300;
+    background-color: rgb(171 255 252);
+    border: solid 0.5vw rgb(209 235 236);
+  
+}
+#tutGif{
+    width:36vw;
+    height: 25vw;
+   
+}
+#endBlabla{
+    display: none;
+    position: relative;
+    font-size: 1.6vw;
+    top: 14vw;
+    animation-name: end;
+    animation-duration: 4s;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+@keyframes end {
+
+0%{
+   
+    opacity: 0%;
+}
+  
+    100% {
+      
+        opacity: 100%;
+    }
+}
+
+#endMassage{
+    color: #d6070b;
+    font-family: cursive;
+    font-size: 8vw;
+   left: 44vw ;
+   top: 10vw;
+    position: fixed;
+    opacity:100%;
+    animation-name: end2,end3;
+    animation-duration: 21s,5s;
+}
+@keyframes end2 {
+
+    0% {
+       opacity: 0%;
+        /* margin-bottom: 0vw; */
+
+    }
+
+    100% {
+        opacity:100%;
+         /* margin-bottom: 8vw; */
+    }
+}
+@keyframes end3 {
+
+    0% {
+      font-size: 8vw;
+      
+
+    }
+    10%{
+      font-size: 5vw;
+
+    }
+    20% {
+        font-size: 8vw;
+        
+  
+      }
+      30%{
+        font-size: 5vw;
+  
+      }
+      40% {
+        font-size: 8vw;
+        
+  
+      }
+      50%{
+        font-size: 5vw;
+  
+      }
+      60% {
+        font-size: 8vw;
+        
+  
+      }
+      70%{
+        font-size: 5vw;
+  
+      }
+    80%{
+      font-size: 8vw;
+
+    }
+    90%{
+        font-size: 5vw;
+  
+      }
+
+    100% {
+        font-size: 8vw;
+      
+    }
+}

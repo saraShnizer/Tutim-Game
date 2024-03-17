@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodyGame">
+  <img src="../images/back-ground.jpg" alt="" id="background">
+  <h1 id="hello"> </h1>
+  <div id="oraot">
+    <!-- הוראות מישחק -->
+    <h2>?איך זה עובד</h2>
+    <p>
+        עליך להזיז את ה'פה' בעזרת חיצי המקלדת ימינה או שמאלה
+        <br> כשהמטרה  היא לאכול כמה שיותר תותים בזמן הנתון, כל אכילת תות מעלה עשר נקודות
+       <br> שים לב! עליך להימנע מאכילת השבלולים, כל אכילת שבלול תוריד לך עשר נקודות 
+
+      <br>
+       !!!בהנאה
+    </p>
+  </div>
+<div id="levels">
+  <button id="level1" class="level">level1</button> 
+  <button id="level2" class="level">level2</button>
+  <button id="level3" class="level">level3</button> 
+
+</div>
+<div id="endOfGame">
+<h1 id="endMassage">end!</h1>
+<p id="endBlabla"></p>
+<!-- <button id="newGame">למשחק חדש-></button> -->
+<audio id="eror" src="../images/chord.wav"></audio>
+<audio id="eat" src="../images/Speech On.wav"></audio>
+<audio id="endMusic" src="../images/fail-jingle-stereo-mix-88784.mp3"></audio>
+<img src="../images/giphy (2).gif" alt="" id="tutGif">
+</div>
+
+
+  <script src="game.js"></script>
+ 
+</body>
+</html>
